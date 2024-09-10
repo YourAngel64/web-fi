@@ -2,7 +2,6 @@ import axios from "axios";
 
 const dataPost = async (url, data, csrf_token, e) => {
   e.preventDefault()
-
   try {
     const results = await axios.post(url, data, {
       headers: {
